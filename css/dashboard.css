@@ -1,0 +1,849 @@
+body{
+	margin:0;
+	
+font-family: Ubuntu;
+}
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:235px;
+overflow:visible;
+}
+
+.main-menu {
+background:#dcdcdc;
+border-right:1px solid #e5e5e5;
+position:fixed;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+margin-top: 0px;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:235px;
+color: black;
+padding-top: 15px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#4a4a4a; 
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width: 165px;
+  
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#963fcf;
+width: 235px;
+}
+
+.submenu li>a{
+	background-color: #dcdcdc;
+}
+
+.submenu li>a:hover{
+	background-color: #dcdcdc;
+}
+
+.submenu li:hover{
+	background-color: #dcdcdc;
+}
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  background-color: #dcdcdc;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #dcdcdc;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #dcdcdc;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.submenu li{
+	margin-left:40px;
+
+}
+
+
+
+.main-menu img{
+	max-width: 235px;
+}
+.csi-main{
+	transition: margin-left .4s;
+	
+}
+
+.csi-teal{
+	color: #fff!important;
+    background: linear-gradient(
+	to right,
+	#903bcc 30%, 
+	#581db4);
+	height:240px;
+}
+
+h3{
+	color: black;
+}
+/*Vertical Tabs*/
+.vertical-mdl-tabs {
+    
+}
+.vertical-mdl-tabs .mdl-tabs__tab-bar {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 35px;
+    height: 285px;
+    border-bottom: none;
+	width:218px;
+	
+    
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab {
+    width: 100%;
+    height: 125px;
+    line-height: 35px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab:hover {
+  background: rgba(158, 158, 158, 0.34);
+  color: white;
+  
+}
+
+.vertical-mdl-tabs.mdl-tabs.is-upgraded a.mdl-tabs__tab.is-active {
+    border-right: 2px solid #ED462F;
+}
+.vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+    content: inherit;
+    height: 0;
+}
+
+.vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__panel.is-active, .mdl-tabs__panel {
+    padding: 0 30px;
+}
+
+.vertical-mdl-tabs.mdl-tabs .mdl-tabs__tab {
+    text-align: center;
+	color: white;
+	font-size: 11px;
+}
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active{
+	color: white;
+}
+.csi-container{
+	text-align: center;
+	
+}
+.csi-container .fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 40px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	width:40px;
+	vertical-align: middle;
+	color: #963fcf;	
+}
+
+.csi-container th{
+	color: #963fcf;	
+	text-align: center;
+	height: 90px;
+}
+
+
+a{
+	color: #963fcf;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.filters-title{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+select{
+	color: black;
+	width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.filters{
+	margin-top:20px;
+}
+.reset-filters{
+	float:right;
+	margin-right:30px;	
+}
+
+
+
+td,th{
+	padding: 0px;
+	border-left: solid 1px #d6d6d6;
+	border-right: solid 1px #d6d6d6;
+}
+table{
+	margin-left:10px; 
+	width:100%; 
+	text-align: center;
+	height: 260px;
+	border: solid 1px #d6d6d6;
+}
+
+.charts{
+	width:500px;
+	height: 190px;
+}
+
+
+.btn-primary{
+    color: #000;
+    background-color: #fff;
+    border-color: #dcdcdc;
+	width:200px;
+}
+
+.btn-primary:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #dcdcdc;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #000;
+    background-color: #fff;
+    border-color: #dcdcdc;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #000;
+    background-color: #fff;
+    border-color: #dcdcdc;
+}
+.social-media-tab{
+	margin-top:15px;
+	
+}
+.nav-user{
+	text-align: left;
+	display: inline-block;
+	margin-top:15px;
+}
+.nav-user img{
+	float: left;
+}
+.nav-user p{
+	margin-left: 5px;
+	width:180px;
+}
+.nav-logo{
+	background-color: #efefef;
+}
+
+.nav-logo img{
+	    margin-left: -6px;
+}
+
+.amount{
+	color: #568437;
+	font-weight: bold;
+}
+
+.addmon{
+	background-color: #963fcf;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	padding: 7px 24px;
+    font-size: 12px;
+}
+.ribbon{
+	position: absolute;
+	margin-left: 35px;
+	margin-top: -13px;
+}
+
+.form-control {
+    display: block;
+    width: 200px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.resultcontact {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-weight: normal;
+	padding: 3px 10px;
+    margin-top: 153px;
+    margin-left: 133px;
+	
+}
+
+.resultcontactt {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-weight: normal;
+	padding: 3px 10px;
+    margin-top: 150px;
+    margin-left: 137px;
+	
+}
+
+.modal-header{
+	text-align: center;
+}
+
+.modal-body{
+	text-align: center;
+}
+.registerhere{
+	background-color: #963fcf;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	padding: 7px 24px;
+    font-size: 12px;
+}
+
+.mainmenu img{
+	margin-left: 11px;
+    margin-right: 14px;
+    padding: 10px 7px;
+    width: 40px;
+}
+
+.resulttitle{
+	font-weight: bold;
+	color: #4a4a4a;
+}
+
+.sortoption{	
+	margin-left: 792px;
+    width: 100px;
+}
+.sortoption2{	
+	margin-left: 866px;
+    width: 100px;
+	margin-top: 38px;
+}
+
+.description {
+    display:none;
+    position:absolute;
+    border:1px solid #000;
+    width:280px;
+    height:80px;
+	background-color: #dcdcdc;
+	z-index: 999;
+	color: #963fcf;
+	text-align: left;
+}
+.description p{
+	margin-left: 5px;
+	margin-top:2px;
+}
+.resultcontact:hover .description {
+ display: block;
+	
+}
+
+.resultcontactt:hover .description {
+ display: block;
+	
+}
+
+.dropdown .fa{
+	font-size: 24px;
+}
+
+.reset-filters a{
+color: white;	
+}
+
+
+
+.col-md-4 a{
+	color: white;
+}
+
+.col-md-4 a:hover{
+	color: blue;
+}
+
+.star{
+	color: red;
+	float: right;
+}
+
+.searchfield{
+	text-align: center;
+	margin-top: 50px;
+}
+
+input[name=query]{
+	border-radius: 2px;
+	border: none;
+	height: 30px;
+	width: 355px;
+	color: black;
+}
+
+.minmax{
+	margin-top:30px;
+}
+/*Added by kashyap for fb reaction*/
+.facebook-reaction{
+  max-width:100%;
+ /* margin:150px auto;*/
+  /* padding:0 60px; */
+  position: relative;
+}
+
+.like-btn {
+  font-weight: bold;
+  color: #7f7f7f;
+  position: relative;
+  cursor: pointer;
+  padding: 20px 20px 0 0;
+}
+
+.like-btn:hover {
+  text-decoration: underline;
+}
+
+.like-btn-default {
+  background-image: url('../img/facebook.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -277px -446px;
+}
+
+.like-btn-emo {
+  display: inline-block;
+  margin: 0 6px -3px 0;
+  width: 16px;
+  height: 16px;
+}
+
+.reactions-box {
+  height: 44px;
+  width: 250px;
+  padding: 10px;
+  position: absolute;
+  top: -36px;
+  left: -14px;
+  box-shadow: 1px 1px 2px #cccccc, -1px 0px 2px #eeeeee;
+  border-radius: 44px 44px;
+  display: none;
+}
+
+.reaction {
+  list-style-type: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 8px;
+  opacity: 0;
+  transform: scale(1, 1);
+  transition: opacity .5s ease-in-out 1s, transform .07s ease-in-out 0s, top .07s ease-in-out 0s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center
+}
+
+.like-btn:hover .reactions-box {
+  display: block;
+}
+
+.reaction-like {
+  left: 10px;
+  transition-delay: 0s;
+  background-image: url('../img/reactions_like.png');
+}
+
+.reaction-love {
+  left: 50px;
+  transition-delay: .05s;
+  background-image: url('../img/reactions_love.png');
+}
+
+.reaction-haha {
+  left: 90px;
+  transition-delay: .1s;
+  background-image: url('../img/reactions_haha.png');
+}
+
+.reaction-wow {
+  left: 130px;
+  transition-delay: .15s;
+  background-image: url('../img/reactions_wow.png');
+}
+
+.reaction-sad {
+  left: 170px;
+  transition-delay: .2s;
+  background-image: url('../img/reactions_sad.png');
+}
+
+.reaction-angry {
+  left: 210px;
+  transition-delay: .25s;
+  background-image: url('../img/reactions_angry.png');
+}
+
+
+
+.like-btn:hover .reaction {
+  opacity: 1;
+  animation-name: reaction_delay;
+  animation-duration: .5s;
+}
+
+@keyframes reaction_delay {
+  0% {
+    width: 48px;
+    height: 48px;
+    top: 60px;
+  }
+  48% {
+    width: 56px;
+    height: 56px;
+    top: 5px;
+  }	
+  100% {
+    width: 48px;
+    height: 48px;
+    top: 8px;
+  }
+}
+
+
+.like-btn:hover .reaction-like {
+  animation-delay: 0s
+}
+
+.like-btn:hover .reaction-love {
+  animation-delay: .05s
+}
+
+.like-btn:hover .reaction-haha {
+  animation-delay: .1s
+}
+
+.like-btn:hover .reaction-wow {
+  animation-delay: .15s
+}
+
+.like-btn:hover .reaction-sad {
+  animation-delay: .2s
+}
+
+.like-btn:hover .reaction-angry {
+  animation-delay: .25s
+}
+
+.reaction:hover {
+  transform: scale(1.3, 1.3);
+  top: 2px
+}
+
+
+
+.reaction::before {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 17px;
+  font-size: .7em;
+  width: 80%;
+  height: 17px;
+  margin-left: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  position: absolute;
+  top: -25px;
+  opacity: 0;
+  transition: opacity .2s ease-in-out 0s;
+}
+
+.reaction:hover::before {
+  opacity: 1
+}
+
+.reaction-like::before {
+	width:auto;
+	padding:0px 2px;
+  content: attr(data-reaction);
+}
+
+.reaction-love::before {
+width:auto;
+padding:0px 2px;
+  content: attr(data-reaction);
+}
+
+.reaction-haha::before {
+width:auto;
+padding:0px 2px;
+  content: attr(data-reaction);
+}
+
+.reaction-wow::before {
+width:auto;
+padding:0px 2px;
+  content: attr(data-reaction);
+}
+
+
+.reaction-sad::before {
+width:auto;
+padding:0px 2px;
+  content: attr(data-reaction);
+}
+
+.reaction-angry::before {
+width:auto;
+padding:0px 2px;
+  content: attr(data-reaction);
+}
+
+.like-stat {
+  margin-top: 10px;
+}
+
+
+.like-btn-like{
+  background-image: url('../img/reaction-small.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -151px;
+}
+
+.like-btn-love{
+  background-image: url('../img/reaction-small.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -168px;
+}
+
+.like-btn-haha{
+  background-image: url('../img/reaction-small.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -151px;
+}
+
+.like-btn-wow{
+  background-image: url('../img/reaction-small.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -185px;
+}
+
+.like-btn-sad{
+  background-image: url('../img/reaction-small.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -168px;
+}
+
+.like-btn-angry{
+  background-image: url('../img/reaction-small.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -17px -117px;
+}
+.like-btn-text{
+    margin-left: 20px;
+	}
+.like-btn-text-like {
+  color:rgb(88, 144, 255);
+}
+.like-btn-text-wow,.like-btn-text-haha,.like-btn-text-sad {
+  color:rgb(240, 186, 21)
+}
+.like-btn-text-love{
+  color:rgb(242, 82, 104)
+}
+.like-btn-text-angry{
+  color:rgb(247, 113, 75);
+}
+
+.like-emo > span{
+    display: inline-block;
+    margin: 0 -3px -3px 0px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #EEE;
+    border-radius: 50%;
+
+}
+
+.like-details{
+  margin-left:10px;
+  color:#9197a3;
+  font-size:12px;
+}
+.social-media-td{
+width: 140px;
+}
+.social-media-ig-td{
+position: relative;
+    bottom: -17px;
+}
